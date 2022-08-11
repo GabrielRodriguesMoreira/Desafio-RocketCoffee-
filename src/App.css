@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+
+body{
+    background-color: var(--backgrond);
+    overflow: hidden;
+    margin: 0;
+}
+body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    width: 70%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-weight: 400;
+}
+header nav a{
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 10px;
+}
+
+header button{
+    background-color: transparent;
+    border: 1px solid var(--button);
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 6px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.text{
+    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.coffe{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.blur_1, .blur_2{
+    z-index: -1;
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    right: 0;
+    top: 0;
+    background: #996DFF;
+    filter: blur(140px);
+}
+.blur_2{
+    right:auto;
+    left: 0;
+    top: auto;
+    bottom: 0;
+
+}
